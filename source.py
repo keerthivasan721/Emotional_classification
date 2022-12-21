@@ -99,10 +99,10 @@ model.compile(loss='categorical_crossentropy',
               optimizer=Adam(lr=0.001),
               metrics=['accuracy'])
 
-nb_train_samples = 24176
-nb_validation_samples = 3006
+nb_train_samples = 20000
+nb_validation_samples = 2458
 
-epochs = 25
+epochs = 30
 
 history = model.fit_generator(
             train_generator,
